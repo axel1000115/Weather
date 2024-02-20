@@ -1,3 +1,8 @@
+EXERCISE Web API :
+
+GET: Used for requesting data from a specified resource.
+POST: Used for submitting data to a specified resource.
+
 [HttpPost(Name = "PostWeatherForecast")]
 public string Post()
 {
