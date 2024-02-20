@@ -1,11 +1,13 @@
 [HttpPost(Name = "PostWeatherForecast")]
 public string Post()
 {
+    // Returns a simple string response telling that this is a POST request.
     return "This is a post";
 }
 
-[HttpGet("summaries",Name = "GetAllSummaries")]
+[HttpGet("summaries", Name = "GetAllSummaries")]
 public IEnumerable<string> GetAllSummaries()
 {
+    // Returns an array of string summaries
     return Summaries;
-}
+} 
