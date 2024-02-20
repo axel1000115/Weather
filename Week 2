@@ -1,1 +1,11 @@
+[HttpPost(Name = "PostWeatherForecast")]
+public string Post()
+{
+    return "This is a post";
+}
 
+[HttpGet("summaries",Name = "GetAllSummaries")]
+public IEnumerable<string> GetAllSummaries()
+{
+    return Summaries;
+}
